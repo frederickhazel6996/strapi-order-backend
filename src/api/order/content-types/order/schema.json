@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "foods": {
+      "type": "text"
+    },
+    "cost": {
+      "type": "decimal"
+    },
+    "paid": {
+      "type": "boolean"
+    },
+    "served": {
+      "type": "boolean"
+    },
+    "tip": {
+      "type": "decimal"
+    },
+    "completed": {
+      "type": "time"
+    }
+  }
+}

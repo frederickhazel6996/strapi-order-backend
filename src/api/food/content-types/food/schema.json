@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "foods",
+  "info": {
+    "singularName": "food",
+    "pluralName": "foods",
+    "displayName": "Food",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "cost": {
+      "type": "decimal",
+      "required": true
+    },
+    "preparation_time_min": {
+      "type": "integer"
+    },
+    "availability": {
+      "type": "boolean",
+      "default": true
+    },
+    "categories": {
+      "type": "enumeration",
+      "enum": [
+        "meal",
+        "salads",
+        "drinks",
+        "appetizers",
+        "desserts"
+      ]
+    }
+  }
+}
